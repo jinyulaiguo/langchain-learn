@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/01.phrase01" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/02.phrase02" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/03.phrase03" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/04.phrase04/langgraph-linear-approval" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/05.phrase05" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/06.phrash06/multi_agent_report" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/07.phrase07" vcs="Git" />
+  </component>
+</project>

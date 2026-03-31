@@ -1,0 +1,30 @@
+[project]
+name = "router-qa"
+version = "0.1.0"
+description = "LangChain 多模板问答路由器 (不涉及 LCEL 管道语法，使用多链显式调用)"
+readme = "README.md"
+# 推荐改成这个范围，目前生态最稳定
+requires-python = ">=3.11,<3.14"
+
+dependencies = [
+    "langchain>=0.3.0",           # 建议使用较新版本
+    "langchain-openai>=0.2.0",
+    "langchain-anthropic>=0.3.0", # 如果你后面要用 Claude，可以加上
+    "langchain-deepseek>=0.1.0",  # 如果要用 DeepSeek
+    "pydantic>=2.8.0",
+    "pydantic-settings>=2.8.0",   # 强烈推荐加上
+    "python-dotenv>=1.0.0",
+    "langchain-classic>=1.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "pytest",
+    "black",
+    "ipykernel",          # 如果你在用 Jupyter
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

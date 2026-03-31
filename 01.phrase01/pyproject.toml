@@ -1,0 +1,23 @@
+[project]
+name = "01-phrase01"
+version = "0.1.0"
+description = "LLM API 调用基准测试器 - 阶段0：验证原生 Python 异步编程能力"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",    # 原始 HTTP 请求（同步 + 异步），替代所有 SDK
+    "langchain>=1.2.13",
+    "pydantic>=2.12.5", # 数据验证（可选使用）
+]
+
+[project.optional-dependencies]
+# LangChain 系列依赖放入 optional，确保基准测试无需这些依赖
+langchain = [
+    "langchain>=1.2.13",
+    "langchain-openai>=1.1.12",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=9.0.2",
+]

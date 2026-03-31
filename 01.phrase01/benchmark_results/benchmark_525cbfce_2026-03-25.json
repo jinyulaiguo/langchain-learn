@@ -1,0 +1,99 @@
+{
+  "benchmark_id": "525cbfce",
+  "created_at": "2026-03-25T08:20:20.969130+00:00",
+  "test_prompt": "请用一句话解释什么是机器学习。",
+  "concurrent_requests": 3,
+  "providers": [
+    {
+      "provider": "DeepSeek",
+      "model": "deepseek-chat",
+      "summary": {
+        "sync_avg_latency_ms": 2121.21,
+        "async_avg_latency_ms": 1970.25,
+        "sync_success_rate": 1.0,
+        "async_success_rate": 1.0,
+        "speedup_ratio": 1.08
+      },
+      "sync_results": [
+        {
+          "provider": "DeepSeek",
+          "model": "deepseek-chat",
+          "mode": "sync",
+          "call_index": 0,
+          "start_time": "2026-03-25T08:20:20.969288+00:00",
+          "end_time": "2026-03-25T08:20:23.090511+00:00",
+          "latency_ms": 2121.21,
+          "success": true,
+          "content": "机器学习是让计算机通过数据自动学习规律并做出预测或决策的技术。",
+          "token_usage": {
+            "prompt_tokens": 11,
+            "completion_tokens": 16,
+            "total_tokens": 27
+          },
+          "error_type": null,
+          "error_message": null,
+          "status_code": 200
+        }
+      ],
+      "async_results": [
+        {
+          "provider": "DeepSeek",
+          "model": "deepseek-chat",
+          "mode": "async",
+          "call_index": 0,
+          "start_time": "2026-03-25T08:20:23.151879+00:00",
+          "end_time": "2026-03-25T08:20:25.146417+00:00",
+          "latency_ms": 1994.53,
+          "success": true,
+          "content": "机器学习是让计算机通过数据自动学习规律并做出预测或决策的技术。",
+          "token_usage": {
+            "prompt_tokens": 11,
+            "completion_tokens": 16,
+            "total_tokens": 27
+          },
+          "error_type": null,
+          "error_message": null,
+          "status_code": 200
+        },
+        {
+          "provider": "DeepSeek",
+          "model": "deepseek-chat",
+          "mode": "async",
+          "call_index": 1,
+          "start_time": "2026-03-25T08:20:23.156157+00:00",
+          "end_time": "2026-03-25T08:20:25.079258+00:00",
+          "latency_ms": 1923.1,
+          "success": true,
+          "content": "机器学习是让计算机通过数据自动学习规律并做出预测或决策的技术。",
+          "token_usage": {
+            "prompt_tokens": 11,
+            "completion_tokens": 16,
+            "total_tokens": 27
+          },
+          "error_type": null,
+          "error_message": null,
+          "status_code": 200
+        },
+        {
+          "provider": "DeepSeek",
+          "model": "deepseek-chat",
+          "mode": "async",
+          "call_index": 2,
+          "start_time": "2026-03-25T08:20:23.156373+00:00",
+          "end_time": "2026-03-25T08:20:25.149478+00:00",
+          "latency_ms": 1993.11,
+          "success": true,
+          "content": "机器学习是让计算机通过数据自动学习规律并做出预测或决策的技术。",
+          "token_usage": {
+            "prompt_tokens": 11,
+            "completion_tokens": 16,
+            "total_tokens": 27
+          },
+          "error_type": null,
+          "error_message": null,
+          "status_code": 200
+        }
+      ]
+    }
+  ]
+}

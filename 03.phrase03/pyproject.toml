@@ -1,0 +1,27 @@
+[project]
+name = "phrase03"
+version = "0.1.0"
+description = "带记忆的 RAG 问答系统 (阶段 3)"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=0.3.0",                    # 放宽到 0.3.x
+    "langchain-core>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-chroma>=0.1.2",
+    "chromadb>=0.5.0",                     # 推荐使用较新版本
+    "pypdf>=4.0.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.8.0",
+    "pydantic-settings>=2.8.0",            # 强烈建议加上
+    "langchain-huggingface>=1.2.1",
+    "sentence-transformers>=5.3.0",
+]
+
+[tool.uv]
+managed = true
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
